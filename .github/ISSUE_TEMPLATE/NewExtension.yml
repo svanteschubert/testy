@@ -1,4 +1,4 @@
-name: Invoice_Extension
+name: New Invoice Extension
 description: File a new e-Invoice extension request
 title: "[Extension]: "
 labels: ["extension", "new"]
@@ -155,7 +155,7 @@ body:
   - type: dropdown
     id: dataType
     attributes:
-      label: Parent
+      label: Data Group
       description: "Is the required semantic a data group or single data?"
       options:
         - "uncertain"
@@ -168,6 +168,7 @@ body:
     id: parent
     attributes:
       label: Parent
+      multiple: true
       description: "Are you aware of its semantic context in EN16931? \n(in case of BG its parent and for BT its group)"
       options:
         - "uncertain"
